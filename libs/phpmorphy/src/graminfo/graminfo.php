@@ -94,13 +94,21 @@ abstract class phpMorphy_GramInfo implements phpMorphy_GramInfo_Interace {
         $header,
         $ends,
         $ends_size;
-    
-    protected function phpMorphy_GramInfo($resource, $header) {
+
+
+    // PHP7 Constructor class name, see https://stackoverflow.com/a/36340079/1173350  
+    // self::__construct();
+    public function __construct($resource, $header)
+    {
         $this->resource = $resource;
         $this->header = $header;
         
         $this->ends = str_repeat("\0", $header['char_size'] + 1);
         $this->ends_size = $GLOBALS['__phpmorphy_strlen']($this->ends);
+    }
+
+    protected function phpMorphy_GramInfo($resource, $header) {
+        self::__construct($resource, $header);
     }
     
     static function create(phpMorphy_Storage $storage, $lazy) {
@@ -208,9 +216,16 @@ abstract class phpMorphy_GramInfo implements phpMorphy_GramInfo_Interace {
 
 class phpMorphy_GramInfo_Decorator implements phpMorphy_GramInfo_Interace {
     protected $info;
-    
-    function phpMorphy_GramInfo_Decorator(phpMorphy_GramInfo_Interace $info) {
+
+    // PHP7 Constructor class name, see https://stackoverflow.com/a/36340079/1173350  
+    // self::__construct();
+    public function __construct($info)
+    {
         $this->info = $info;
+    }
+
+    function phpMorphy_GramInfo_Decorator(phpMorphy_GramInfo_Interace $info) {
+        self::__construct($info);
     }
     
     function readGramInfoHeader($offset) { return $this->info->readGramInfoHeader($offset); }

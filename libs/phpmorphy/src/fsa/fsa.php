@@ -96,12 +96,20 @@ abstract class phpMorphy_Fsa implements phpMorphy_Fsa_Interface {
         $fsa_start,
         $root_trans,
         $alphabet;  
-    
-    protected function phpMorphy_Fsa($resource, $header) {
+
+
+    // PHP7 Constructor class name, see https://stackoverflow.com/a/36340079/1173350  
+    // self::__construct();
+    public function __construct($resource, $header)
+    {
         $this->resource = $resource;
         $this->header = $header;
         $this->fsa_start = $header['fsa_offset'];
         $this->root_trans = $this->readRootTrans();
+    }
+
+    protected function phpMorphy_Fsa($resource, $header) {
+        self::__construct($resource, $header);
     }
 
     // static
@@ -216,9 +224,16 @@ class phpMorphy_Fsa_WordsCollector {
     protected
         $items = array(),
         $limit;
-    
-    function phpMorphy_Fsa_WordsCollector($collectLimit) {
+
+    // PHP7 Constructor class name, see https://stackoverflow.com/a/36340079/1173350  
+    // self::__construct();
+    public function __construct($collectLimit)
+    {
         $this->limit = $collectLimit;
+    }
+
+    function phpMorphy_Fsa_WordsCollector($collectLimit) {
+        self::__construct($collectLimit);
     }
     
     function collect($word, $annot) {
@@ -237,9 +252,16 @@ class phpMorphy_Fsa_WordsCollector {
 
 class phpMorphy_Fsa_Decorator implements phpMorphy_Fsa_Interface {
     protected $fsa;
-    
-    function phpMorphy_Fsa_Decorator(phpMorphy_Fsa_Interface $fsa) {
+
+    // PHP7 Constructor class name, see https://stackoverflow.com/a/36340079/1173350  
+    // self::__construct();
+    public function __construct(phpMorphy_Fsa_Interface $fsa)
+    {
         $this->fsa = $fsa;
+    }
+
+    function phpMorphy_Fsa_Decorator(phpMorphy_Fsa_Interface $fsa) {
+        self::__construct($fsa);
     }
     
     function getRootTrans() { return $this->fsa->getRootTrans(); }

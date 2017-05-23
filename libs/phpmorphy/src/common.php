@@ -58,9 +58,17 @@ class phpMorphy_FilesBundle {
         $dir,
         $lang;
 
-    function phpMorphy_FilesBundle($dirName, $lang) {
+    // PHP7 Constructor class name, see https://stackoverflow.com/a/36340079/1173350  
+    // self::__construct();
+    public function __construct($dirName, $lang)
+    {
+        // Constructor's functionality here, if you have any.
         $this->dir = rtrim($dirName, "\\/" . DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR;
         $this->setLang($lang);
+    }
+
+    function phpMorphy_FilesBundle($dirName, $lang) {
+        self::__construct($dirName, $lang);
     }
 
     function getLang() {
