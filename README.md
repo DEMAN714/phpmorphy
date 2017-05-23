@@ -1,11 +1,11 @@
-# cijic/phpmorphy
+# componavt/phpmorphy
 
 phpMorphy --- morphological analyzer library for Russisan, English and German languages.  
-```cijic/phpMorphy``` is wrapper for phpMorphy library.
+```componavt/phpMorphy``` is wrapper for phpMorphy library.
 
 Source website (in russian): http://phpmorphy.sourceforge.net/  
 SF project: http://sourceforge.net/projects/phpmorphy  
-Wrapper on Github: https://github.com/cijic/phpmorphy
+Wrapper on Github: https://github.com/componavt/phpmorphy
 
 This library allow retireve follow morph information for any word:
 - Base (normal) form
@@ -16,12 +16,12 @@ This library allow retireve follow morph information for any word:
 
 Via Composer
 ``` bash
-$ composer require cijic/phpmorphy
+$ composer require componavt/phpmorphy
 ```
 
 ## Usage
 ``` php
-$morphy = new cijic\phpMorphy\Morphy('en');
+$morphy = new componavt\phpMorphy\Morphy('en');
 echo $morphy->getPseudoRoot('FIGHTY');
 ```
 ## Laravel support
@@ -36,12 +36,12 @@ Add to config/app.php:
 
 Section ```providers```
 ``` php
-cijic\phpMorphy\MorphyServiceProvider::class,
+componavt\phpMorphy\MorphyServiceProvider::class,
 ```
 
 Section ```aliases```
 ``` php
-'Morphy'    => cijic\phpMorphy\Facade\Morphy::class,
+'Morphy'    => componavt\phpMorphy\Facade\Morphy::class,
 ```
 
 ## Change log

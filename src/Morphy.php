@@ -1,6 +1,6 @@
 <?php
 
-namespace cijic\phpMorphy;
+namespace componavt\phpMorphy;
 
 use phpMorphy;
 
