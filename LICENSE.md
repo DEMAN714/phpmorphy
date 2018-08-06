@@ -1,5 +1,6 @@
 # The MIT License (MIT)
 
+Copyright (c) 2018 Dmitriy Rodionov <dimarod96@yandex.ru>
 Copyright (c) 2017 Andrew Krizhanovsky <andrew.krizhanovsky@gmail.com>
 Copyright (c) 2015 Chiril Teterea <altcode@ya.ru>
 
