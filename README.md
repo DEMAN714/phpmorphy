@@ -1,4 +1,4 @@
-# componavt/phpmorphy
+# deman714/phpmorphy
 
 phpMorphy --- morphological analyzer library for Russisan, English and German languages.  
 ```componavt/phpMorphy``` is wrapper for phpMorphy library.
