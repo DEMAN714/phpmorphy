@@ -5,7 +5,7 @@ phpMorphy --- morphological analyzer library for Russisan, English and German la
 
 Source website (in russian): http://phpmorphy.sourceforge.net/  
 SF project: http://sourceforge.net/projects/phpmorphy  
-Wrapper on Github: https://github.com/componavt/phpmorphy
+Wrapper on Github: https://github.com/deman714/phpmorphy
 
 This library allow retireve follow morph information for any word:
 - Base (normal) form
