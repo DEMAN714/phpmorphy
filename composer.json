@@ -1,14 +1,14 @@
 {
-    "name": "componavt/phpmorphy",
+    "name": "deman714/phpmorphy",
     "description": "phpMorphy - morphological analyzer library for Russisan, English languages.",
     "keywords": [
         "phpMorphy"
     ],
-    "homepage": "https://github.com/componavt/phpmorphy",
+    "homepage": "https://github.com/deman714/phpmorphy",
     "license": "MIT",
     "authors": [{
-        "name": "Andrew Krizhanovsky",
-        "email": "andrew.krizhanovsky@gmail.com",
+        "name": "deman714",
+        "email": "dimarod96@yandex.ru",
         "role": "Developer"
     }],
     "require": {
@@ -20,7 +20,7 @@
             "libs/phpmorphy/src/"
         ],
         "psr-4": {
-            "componavt\\phpMorphy\\": "src"
+            "deman714\\phpMorphy\\": "src"
         }
     }
 }
