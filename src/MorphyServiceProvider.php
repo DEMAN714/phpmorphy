@@ -1,6 +1,6 @@
 <?php
 
-namespace componavt\phpMorphy;
+namespace deman714\phpMorphy;
 
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\ServiceProvider;
