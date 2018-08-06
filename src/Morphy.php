@@ -1,6 +1,6 @@
 <?php
 
-namespace componavt\phpMorphy;
+namespace deman714\phpMorphy;
 
 use phpMorphy;
 
