@@ -2,7 +2,7 @@
 
 Contributions are **welcome** and will be fully **credited**.
 
-We accept contributions via Pull Requests on [Github](https://github.com/componavt/phpmorphy).
+We accept contributions via Pull Requests on [Github](https://github.com/deman714/phpmorphy).
 
 
 ## Pull Requests
