@@ -1,7 +1,7 @@
 # deman714/phpmorphy
 
 phpMorphy --- morphological analyzer library for Russisan, English and German languages.  
-```componavt/phpMorphy``` is wrapper for phpMorphy library.
+```deman714/phpMorphy``` is wrapper for phpMorphy library.
 
 Source website (in russian): http://phpmorphy.sourceforge.net/  
 SF project: http://sourceforge.net/projects/phpmorphy  
@@ -16,12 +16,12 @@ This library allow retireve follow morph information for any word:
 
 Via Composer
 ``` bash
-$ composer require componavt/phpmorphy
+$ composer require deman714/phpmorphy
 ```
 
 ## Usage
 ``` php
-$morphy = new componavt\phpMorphy\Morphy('en');
+$morphy = new deman714\phpMorphy\Morphy('en');
 echo $morphy->getPseudoRoot('FIGHTY');
 ```
 ## Laravel support
@@ -36,12 +36,12 @@ Add to config/app.php:
 
 Section ```providers```
 ``` php
-componavt\phpMorphy\MorphyServiceProvider::class,
+deman714\phpMorphy\MorphyServiceProvider::class,
 ```
 
 Section ```aliases```
 ``` php
-'Morphy'    => componavt\phpMorphy\Facade\Morphy::class,
+'Morphy'    => deman714\phpMorphy\Facade\Morphy::class,
 ```
 
 ## Change log
