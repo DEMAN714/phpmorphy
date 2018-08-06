@@ -1,6 +1,6 @@
 # deman714/phpmorphy
 
-phpMorphy --- morphological analyzer library for Russisan, English and German languages.  
+phpMorphy --- morphological analyzer library for Russian, English and German languages.  
 ```deman714/phpMorphy``` is wrapper for phpMorphy library.
 
 Source website (in russian): http://phpmorphy.sourceforge.net/  
